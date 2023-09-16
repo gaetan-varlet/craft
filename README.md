@@ -156,7 +156,7 @@ Les bénéfices du BDD :
 
 Dans un contexte legacy, introduire des scénarios permet de documenter le comportement existant. On parle de **tests de caractérisation**, qui pourront être réutilisés dans une optique de ré-écriture.
 
-## Le pair et le mob programming
+## Le pair et le mob programming
 
 TODO
 
