@@ -1,6 +1,17 @@
 # Software craftsmanship
 Dépôt regroupant les principes craft ainsi que des liens vers des exemples
 
+## Les pratiques du craft
+
+### Le TDD
+
+- exercice [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
+
+
+
+
+
+
 
 
 ## Clean Architecture
@@ -17,3 +28,8 @@ réduction des dépendances de la logique métier avec les services que l'on con
 ### Les inconvénients
 
 - ajout de complexité
+
+
+### Mise en place de la Clean architecture sur un projet de cave à vin
+
+- https://github.com/gaetan-varlet/clean-architecture
