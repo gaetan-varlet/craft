@@ -1,8 +1,12 @@
 # Software craftsmanship
+
 Dépôt regroupant les principes craft ainsi que des liens vers des exemples
 
 Le software craftsmanship, c'est :
-- une communauté de professionnels, l'excellence technique, un logiciel bien conçu, l'ajout de valeur
+- une communauté de professionnels
+- l'excellence technique
+- un logiciel bien conçu
+- l'ajout de valeur
 - une démarche de partenariat avec le client
 - l'amélioration continue
 - des outils
@@ -41,16 +45,15 @@ Avantages :
 - fautes d'inattention décelées immédiatement
 - presque plus besoin du mode debug
 - moins de maintenance corrective => amélioration de la productivité
-- sérénite pour le refactor
+- sérénité pour le refactor
 - plaisir de coder avec le confort généré
 - documentation gratuite
 - délégation aux collègues plus facile
 
 Inconvénients :
 - courbe d'apprentissage importante
-- nécessite une discipline sansa faille
+- nécessite une discipline sans faille
 - pratique mal interprétée qui peut mener à des tests fragiles et un surcoût
-
 
 
 ## Le BDD / L'ATDD
@@ -86,3 +89,40 @@ réduction des dépendances de la logique métier avec les services que l'on con
 ## Mise en place de la Clean architecture sur un projet de cave à vin
 
 - https://github.com/gaetan-varlet/clean-architecture
+
+# Living Documentation
+
+Pourquoi faire de la documentation ?
+- il faut que ça serve à plusieurs personnes
+- il faut que ce soit pérenne
+
+D'autres possibilités :
+- conversations over documentation
+- pair-programming
+- code is documentation
+	- read the code, learn the business domain
+	- DDD (Domain Driven Design) : investir dans le savoir métier
+- Domain Immersion : aller voir comment travaille le métier pour gagner de l'information
+- savoir métier : faire une documentation avec ce qui est stable uniquement, dans un wiki
+- pour les comportements métier (qui changent souvent)
+	- BDD (Behavior DD) : programmation pilotée par le comprtement
+	- description de scénarios de type given/when/then
+		- cela crée de la redondance avec le code
+		- **Cucumber**, **Specflow** : permet de tester la documentation, vérifier qu'elle correspond au code
+		- on parle de **Living Documentation**, assure le rôle de specs et de docs
+		- versionné avec le code source
+	- **Pikles**
+		- Living Documentation generator: it takes your Specification (written in Gherkin, with Markdown descriptions) and turns them into an always up-to-date documentation of the current state of your software - in a variety of formats
+- pour faire des diagrammes, utilisation d'outils **Plain-Text Diagram**, ce qui permet de versionner le diagramme sous forme de texte
+- **Living glossary** : génération d'un glossaire à partir d'annotations dans notre code, comme **Doclet** par exemple
+- **Living Diagram** : génération d'un diagramme à partir du code source
+
+
+Ce qu'il ne faut pas faire :
+1. Write code
+2. Write tests
+3. Write doc
+
+Ce qu'il faut faire :
+- write tests = write doc
+- write code = write doc
