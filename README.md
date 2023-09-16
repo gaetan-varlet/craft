@@ -67,19 +67,57 @@ Inconvénients :
 
 [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
 
-## Le BDD / L'ATDD
+## Clean Code
 
-Le Behaviour-Driven Development, ou programmation pilotée par le comportement
+- code syntaximent correct VS **code lisible et compréhensible, facile à maintenir et à faire évoluer**
+- **théorie de la vitre brisée**
+    - dégradation qui n'est pas réparée va entrainer d'autres dégradations
+    - fonctionne pour des bases de code déjà saines
+- **règle du boy-scout**
+    - laisser le code modifié dans un meilleur état que celui où on l'a trouvé
+    - amélioration progressive du code
+
+Rester simple et aller à l'essentiel
+- **KISS** : Keep It Simple and Stupid, invite à faire le code le plus simple possible
+- **YAGNI** : You Ain't Gonna Need It (vous n'en aurez pas besoin)
+La pratique du TDD nous permet également naturellement de faire cela
+
+Les 4 règles du Simple Desigen (Kent Beck) :
+- **passer les tests** : vérifier le bon fonctionnement, outil de documentation
+- **révéler l'intention** : noms de variables et méthodes clairs, fonctions petites et simples, limitation des commentaires
+- **éviter la duplication** : DRY (Don't Repeat Yourself), limiter à une seule représentation toute connaissance
+- **rester petit** : pas de code mort, pas de complexité inutile
+
+## Le développement dirigé par le comportement (BDD)
+
+Le BDD (**Behaviour-Driven Development**), ou programmation pilotée par le comportement
 - favorise le dialogue avec le métier, via des exemples, pour éviter les quiproquos
 
-L'Acceptance Test–Driven Development (développement piloté par les tests d'acceptation)
-- mise en place des exemples définis dans le BDD, sous forme de tests
+L'ATDD (**Acceptance Test–Driven Development**),développement piloté par les tests d'acceptation
+- mise en place des exemples définis dans le BDD, sous forme de tests, dans un langage métier et non technique
 - utilisation d'un langage commun (Gherkin) pour écrire ces exemples sous forme de scénarios
 - utilisation de Cucumber (ou autre) pour lire ses exemples
 
-dépôt Michael Azerhad : https://github.com/mica16/BDD-TDD-Demo/tree/part3
+3 rôles dans le BDD (**Tres Amigos**), se retrouvent dans des ateliers de spécifications :
+- **le PO**, représentant le besoin
+    - explique sa vision
+- **le développeur**, représentant la mise en oeuvre
+    - reformule, propose des aménagements ou alternatives pour aider à la réalisation
+- **le testeur**, pour challenger les 2 autres
+    - pose des questions sur les limtes du cas d'usage, pour vérifier que la proposition est bonne
 
+Il est possible d'avoir des amigos supplémentaires selon les enjeux (UX, expert sécurité, juriste, service production)
 
+Les bénéfices du BDD :
+- la compréhension partagée entre tous
+- tests servent de **critère d'acceptation**, puis de **tests de non régression**
+- **living documentation** : documentation complète et à jour, disponible sous forme de rapport ou site web
+
+Dans un contexte legacy, introduire des scénarios permet de documenter le comportement existant. On parle de **tests de caractérisation**, qui pourront être réutilisés dans une optique de ré-écriture.
+
+## Le pair et le mob programming
+
+TODO
 
 # Clean Architecture
 
