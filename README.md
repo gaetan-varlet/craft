@@ -67,7 +67,7 @@ Inconvénients :
 
 [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
 
-## Clean Code
+## Techniques de Clean Code
 
 - code syntaximent correct VS **code lisible et compréhensible, facile à maintenir et à faire évoluer**
 - **théorie de la vitre brisée**
@@ -82,11 +82,52 @@ Rester simple et aller à l'essentiel
 - **YAGNI** : You Ain't Gonna Need It (vous n'en aurez pas besoin)
 La pratique du TDD nous permet également naturellement de faire cela
 
-Les 4 règles du Simple Desigen (Kent Beck) :
+Les 4 règles du Simple Design (Kent Beck) :
 - **passer les tests** : vérifier le bon fonctionnement, outil de documentation
 - **révéler l'intention** : noms de variables et méthodes clairs, fonctions petites et simples, limitation des commentaires
 - **éviter la duplication** : DRY (Don't Repeat Yourself), limiter à une seule représentation toute connaissance
 - **rester petit** : pas de code mort, pas de complexité inutile
+
+Exprimer l'intention
+- expliquer ce qu'on fait et pourquoi, plutôt que comment
+- l'art du nommage
+    - s'appuyer sur le métier, se focaliser sur le service rendu
+    - utiliser des noms pour les classes, des verbes pour les méthodes
+
+Structure le code
+- découper et organiser le code, pour avoir une vision d'ensemble et pouvoir naviguer dans les détails
+
+Découper les fonctions
+- se limiter à quelques lignes, sinon découper : une fontion ne doit faire qu'une seule chose
+- le découpage en sous-fonction aide à hiérarchiser les niveaux d'abstraction
+- séparation des considérations techniques et métiers
+
+
+Commenter avec modération
+- les commentaires peuvent être obsolètes
+- code bien écrit possède une valeur documentaire : *Don't comment bad code, rewrite it*
+
+```java
+// récupération des adultes
+List<Person> adultes = new ArrayList<>;
+for(Person p : persons){
+    if(person.getAge() >=18){
+        adults.add(p);
+    }
+}
+// suppression du commentaire en mettant le code dans une méthode : List<Person> findAdults(List<Person> persons);
+```
+
+Les commentaires utiles :
+- signaler une subtilité
+- marquer des problèmes à résoudre (TODO)
+
+Ne pas se répéter (DRY)
+- est-ce que les morceaux de code vont évoluer de concert ? si oui, **couplage**, sinon **duplication**
+- chaque connaissance métier ne doit apparaître qu'une seule fois
+
+Avoir du code de test propre :
+- vérifier le comportement de l'applicaition mais aussi fournir une documentation exécutable
 
 ## Le développement dirigé par le comportement (BDD)
 
