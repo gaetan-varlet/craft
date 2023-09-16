@@ -1,7 +1,21 @@
 # Software craftsmanship
 Dépôt regroupant les principes craft ainsi que des liens vers des exemples
 
-# Les pratiques du craft
+Le software craftsmanship, c'est :
+- une communauté de professionnels, l'excellence technique, un logiciel bien conçu, l'ajout de valeur
+- une démarche de partenariat avec le client
+- l'amélioration continue
+- des outils
+
+Les grandes thématiques à aborder :
+- bonnes pratiques du craft (SOLID, TDD, Design Pattern…)
+- architecture hexagonale
+- clean architecture
+- micro-services
+- event-sourcing / CQRS / CQS
+- Domain Driven Design
+
+# Les bonnes pratiques du craft
 
 ## Le développement dirigé par les tests (TDD)
 
