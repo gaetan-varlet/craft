@@ -19,14 +19,20 @@ Les grandes thématiques à aborder :
 
 ## Le développement dirigé par les tests (TDD)
 
-- **Test-First** : test validant notre programme, par exemple, un unique test pour tester le comportement final
-- **Test-Driven Development** : guide le développeur avec un feedback permet, en avançant pas à pas (baby-steps)
+- proposé par Kent Beck à la fin des années 1990
+- technique de développement qui ne se limite pas aux tests
+- un des piliers de l'Extreme Programming (XP) et du craft
+- écrire le code de test avant le code de production
+    - **Test-First** : test validant notre programme, par exemple, un unique test pour tester le comportement final
+    - **Test-Driven Development** : guide le développeur avec un feedback permet, en avançant pas à pas (baby-steps)
+
+![Red Green Refactor](./images/tdd_red_green_refactor.png)
 
 Les lois du TDD :
-- interdiction d'écrire du nouveau code sauf pour faire passer un test qui échoue
-- interdiction d'écrire plus de code qu'il n'en faut pour réussir le test ayant échoué
+- on doit écrire un test qui échoue avant d'érire n'importe quel code de production
+- on ne doit écrire que le code suffisant pour que le test en échec réussisse
 
-Exemple : exercice [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
+Exemple : Kata [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
 
 ### Pourquoi faire du TDD ?
 
