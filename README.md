@@ -36,8 +36,6 @@ Les lois du TDD :
 - on doit écrire un test qui échoue avant d'érire n'importe quel code de production
 - on ne doit écrire que le code suffisant pour que le test en échec réussisse
 
-Exemple : Kata [Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
-
 ### Pourquoi faire du TDD ?
 
 Avantages :
@@ -55,6 +53,19 @@ Inconvénients :
 - nécessite une discipline sans faille
 - pratique mal interprétée qui peut mener à des tests fragiles et un surcoût
 
+### Conseils
+
+- commiter après chaque nouveau test qui passe / code refactoré
+- nommer le test avec la règle de gestion qui est testée avec les mots clés **Shoud/When** (devrait/quand) : `divide_should_raise_an_error_when_denominator_is_zero`
+- le corps du test doit être découpé en 3 parties avec les mots clés **Given/When/Then** :
+    - initialisation des données
+    - appel de la fonction à tester
+    - vérification du résultat
+- pour éviter les valeurs de retour en dur dans le code, possibilité d'écrire 2 tests pour la même règle de gestion
+
+### Kata
+
+[Fizz Buzz](https://github.com/gaetan-varlet/fizz-buzz)
 
 ## Le BDD / L'ATDD
 
