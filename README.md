@@ -158,7 +158,24 @@ Dans un contexte legacy, introduire des scénarios permet de documenter le compo
 
 ## Le pair et le mob programming
 
-TODO
+Pair-programmer : travailler à 2 sur une même machine
+- le pilote, au clavier, et le copilote, en accompagnement
+- rôles tournant tous les 5-10 minutes
+- savoir ralentir pour ne pas perdre l'équipier
+- rôles complémentaires
+
+Pourquoi binômer :
+- apprendre et progresser
+- partager et transmettre
+- se protéger contre le *bus factor*
+
+Prévoir des temps seul pour traiter ses mails, répondre aux imprévus, se ressourcer
+
+Le mob programming consiste à faire travailler une équipe entière sur une seule tâche sur un seul clavier
+- chaque question trouve une réponse immédiate (au lieu de devoir demander à la bonne personne plus tard)
+- partage de l'information dans l'équipe
+- pratique intéressante pour les tâches sensibles ou difficiles, ou lors de formations et ateliers, également pour aligner les pratiques de code...
+- à réaliser idéalement de manière récurente, afin de partager les réalisations récentes, d'avoir une meilleure maitrise de la base de code
 
 # Clean Architecture
 
