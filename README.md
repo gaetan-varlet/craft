@@ -199,6 +199,21 @@ Situations plus difficiles à refactorer :
 - méthodes avec du SQL
 - code avec modification d'état, c'est à dire ayant des interactions avec l'extérieur. On cherchera à avoir des fonctions **pures**, c'est-à-dire que pour chaque entrée en paramètre, on attend une valeur de sortie bien déterminée
 
+## Travailler avec du code legacy
+
+- il existe différentes définitions. Une qui fait de plus en plus consensus, est **un code qui ne dispose pas de tests**
+- il est en effet difficile de savoir ce que le code doit faire sans tests, et il est aussi difficile de faire évoluer le code sans introduire de régressions
+- c'est un critère objectif, indépendemment de l'âge de l'application
+
+L'enfer du legacy : comment améliorer la situation ?
+- écriture de tests sur le périmètre que l'on modifie. 2 stratégies possibles
+    - chercher à comprendre le métier comme point d'appui des tests
+    - observer et capturer le comportement du code dans un **golden master**
+- l'écriture de tests a posteriori peut être difficile, auquel cas, il faut modifier légèrement le code pour le rendre testable
+- ne pas se disperser et rester focalisé sur un problème à la fois pour éviter l'effet tunnel (noter le reste sur une todo liste)
+
+
+
 # Clean Architecture
 
 ## Les avantages de la clean architecture
