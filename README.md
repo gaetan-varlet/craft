@@ -177,6 +177,28 @@ Le mob programming consiste à faire travailler une équipe entière sur une seu
 - pratique intéressante pour les tâches sensibles ou difficiles, ou lors de formations et ateliers, également pour aligner les pratiques de code...
 - à réaliser idéalement de manière récurente, afin de partager les réalisations récentes, d'avoir une meilleure maitrise de la base de code
 
+## Les techniques de refactoring
+
+- le code n'est jamais figé, il est en perpetuelle évolution
+- techniques de refactoring permettent de réécrire le code progressivement sans risque (sans modifier le comportement), pour respecter les règles du clean code (améliorer la lisibilité, rendre plus simple à maintenir et propice à accueillir des évolutions)
+- il est nécessaire d'avoir une couverture de tests suffisante pour refactorer en toute sécurité
+- la dette technique peut être vue comme une forme d'emprunt faite par l'équipe sur sa vélocité future, la pratique régulière du refactoring permet de la contrôler
+- les freins du refactoring : vu comme un coût par le client, peur des développeurs de provoquer des régressions, absence de culture de qualité du code
+- l'objectif est d'exprimer l'intention
+
+Différents outils :
+- transformer par petit pas et vérifier, avec les tests, qu'il n'y a pas de régressions, sinon retour en arrière jusqu'au dernier commit qui fonctionne
+- le **renommage**, que ce soit les classes, les variables, les constantes, les attributs
+- l'**extraction**, permet de découper le code en plus petites unités, permet de nommer des blocs de code, réduire la duplication
+- supprimer les **magic value** en les remplaçant par des constantes avec un nom expressif
+- simplifier les structures conditionnelles
+- réécrire des boucles procédurales en boucles fonctionnelles
+- découper des classes qui ont trop de responsabilité
+
+Situations plus difficiles à refactorer :
+- méthodes avec du SQL
+- code avec modification d'état, c'est à dire ayant des interactions avec l'extérieur. On cherchera à avoir des fonctions **pures**, c'est-à-dire que pour chaque entrée en paramètre, on attend une valeur de sortie bien déterminée
+
 # Clean Architecture
 
 ## Les avantages de la clean architecture
