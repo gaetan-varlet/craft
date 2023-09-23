@@ -27,14 +27,15 @@ Les grandes thématiques à aborder :
 - technique de développement qui ne se limite pas aux tests
 - un des piliers de l'Extreme Programming (XP) et du craft
 - écrire le code de test avant le code de production
-    - **Test-First** : test validant notre programme, par exemple, un unique test pour tester le comportement final
-    - **Test-Driven Development** : guide le développeur avec un feedback permet, en avançant pas à pas (baby-steps)
+    - **Test-First** : test validant notre programme, par exemple, un unique test pour valider le comportement final
+    - **Test-Driven Development** : guide le développeur avec un feedback permanent, en avançant pas à pas (baby-steps)
 
 ![Red Green Refactor](./images/tdd_red_green_refactor.png)
 
 Les lois du TDD :
-- on doit écrire un test qui échoue avant d'érire n'importe quel code de production
-- on ne doit écrire que le code suffisant pour que le test en échec réussisse
+- écrire un test qui échoue avant d'écrire le code de production correspondant
+- écrire un seul test à la fois
+- écrire le minimum de code de production nécessaire pour que le test réussisse
 
 ### Pourquoi faire du TDD ?
 
