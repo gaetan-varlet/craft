@@ -121,7 +121,8 @@ for(Person p : persons){
         adults.add(p);
     }
 }
-// suppression du commentaire en mettant le code dans une méthode : List<Person> findAdults(List<Person> persons);
+// suppression du commentaire en mettant le code dans une méthode
+List<Person> findAdults(List<Person> persons);
 ```
 
 Les commentaires utiles :
