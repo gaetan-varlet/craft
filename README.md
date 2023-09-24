@@ -32,10 +32,11 @@ Les grandes thématiques à aborder :
 
 ![Red Green Refactor](./images/tdd_red_green_refactor.png)
 
-Les lois du TDD :
-- écrire un test qui échoue avant d'écrire le code de production correspondant
-- écrire un seul test à la fois
-- écrire le minimum de code de production nécessaire pour que le test réussisse
+### Les lois du TDD
+
+1. écrire un test qui échoue avant d'écrire le code de production correspondant
+2. écrire un seul test à la fois
+3. écrire le minimum de code de production nécessaire pour que le test réussisse
 
 ### Pourquoi faire du TDD ?
 
