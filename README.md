@@ -74,7 +74,8 @@ Inconvénients :
 - code syntaximent correct VS **code lisible et compréhensible, facile à maintenir et à faire évoluer**
 - **théorie de la vitre brisée**
     - dégradation qui n'est pas réparée va entrainer d'autres dégradations
-    - fonctionne pour des bases de code déjà saines
+    - => principe de tolérance zéro pour éviter d'autres dérives dans le futur
+    - ne fonctionne que pour des bases de code déjà saines
 - **règle du boy-scout**
     - laisser le code modifié dans un meilleur état que celui où on l'a trouvé
     - amélioration progressive du code
@@ -104,6 +105,9 @@ Découper les fonctions
 - le découpage en sous-fonction aide à hiérarchiser les niveaux d'abstraction
 - séparation des considérations techniques et métiers
 
+Normer le code
+- avoir des règles de formatage commune (UTF-8, indentations, accolades, ordres des imports...)
+- => permet de ne pas polluer les commits avec des modifications de forme, ce qui est essentiel pour les **revues de code**
 
 Commenter avec modération
 - les commentaires peuvent être obsolètes
