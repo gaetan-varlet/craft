@@ -58,7 +58,7 @@ Inconvénients :
 ### Conseils
 
 - commiter après chaque nouveau test qui passe / code refactoré
-- nommer le test avec la règle de gestion qui est testée avec les mots clés **Shoud/When** (devrait/quand) : `divide_should_raise_an_error_when_denominator_is_zero`
+- nommer le test avec la règle de gestion qui est testée avec les mots clés **Shoud/When** (doit/quand) : `divide_should_raise_an_error_when_denominator_is_zero`
 - le corps du test doit être découpé en 3 parties avec les mots clés **Given/When/Then** :
     - initialisation des données
     - appel de la fonction à tester
@@ -71,7 +71,7 @@ Inconvénients :
 
 ## Techniques de Clean Code
 
-- code syntaximent correct VS **code lisible et compréhensible, facile à maintenir et à faire évoluer**
+- code syntaxiquement correct VS **code lisible et compréhensible, facile à maintenir et à faire évoluer**
 - **théorie de la vitre brisée**
     - dégradation qui n'est pas réparée va entrainer d'autres dégradations
     - => principe de tolérance zéro pour éviter d'autres dérives dans le futur
@@ -85,7 +85,7 @@ Rester simple et aller à l'essentiel
 - **YAGNI** : You Ain't Gonna Need It (vous n'en aurez pas besoin)
 La pratique du TDD nous permet également naturellement de faire cela
 
-Les 4 règles du Simple Design (Kent Beck) :
+Les 4 règles du Simple Design (Kent Beck, Extreme programming) :
 - **passer les tests** : vérifier le bon fonctionnement, outil de documentation
 - **révéler l'intention** : noms de variables et méthodes clairs, fonctions petites et simples, limitation des commentaires
 - **éviter la duplication** : DRY (Don't Repeat Yourself), limiter à une seule représentation toute connaissance
@@ -127,14 +127,15 @@ List<Person> findAdults(List<Person> persons);
 
 Les commentaires utiles :
 - signaler une subtilité
-- marquer des problèmes à résoudre (TODO)
+- marquer des problèmes à résoudre (tag TODO)
 
 Ne pas se répéter (DRY)
 - est-ce que les morceaux de code vont évoluer de concert ? si oui, **couplage**, sinon **duplication**
 - chaque connaissance métier ne doit apparaître qu'une seule fois
 
 Avoir du code de test propre :
-- vérifier le comportement de l'applicaition mais aussi fournir une documentation exécutable
+- les tests permettent de vérifier le comportement de l'application mais aussi fournir une documentation exécutable
+- il ne faut donc pas négliger cette partie du code
 
 ## Le développement dirigé par le comportement (BDD)
 
