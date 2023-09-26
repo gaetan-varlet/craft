@@ -228,11 +228,33 @@ Utilité :
 
 L'enfer du legacy : comment améliorer la situation ?
 - écriture de tests sur le périmètre que l'on modifie. 2 stratégies possibles :
-    - chercher à comprendre le métier comme point d'appui des tests
-    - observer et capturer le comportement du code dans un **golden master** (tests de caractérisation ou tests « boîte noire »)
+    1. chercher à comprendre le métier comme point d'appui des tests
+    2. observer et capturer le comportement du code dans un **golden master** (tests de caractérisation ou tests « boîte noire »)
+- dans l'approche TDD, c'est au code de production de se conformer aux tests. Dans un contexte legacy, c'est l'inverse, c'est aux tests de se conformer au code de production
 - l'écriture de tests a posteriori peut être difficile, auquel cas, il faut modifier légèrement le code pour le rendre testable
 - ne pas se disperser et rester focalisé sur un problème à la fois pour éviter l'effet tunnel (noter le reste sur une todo liste)
 
+### Tester le code legacy
+
+**Approche par compréhension de code**
+- code compréhensible, où l'on arrive à identifier les règles de gestion
+- éventuellement s'appuyer sur les experts du domaine métier, en gardant en tête qu'ils peuvent être en décalage avec la réalité du code
+- Conseil :
+> Tester en premier les branches les moins profondes du code, refactorer en premier les branches les plus profondes
+- **Kata Trip Service** : https://github.com/sandromancuso/trip-service-kata
+
+**Approche par observation du code**
+- code trop énigmatique, capture de son comportement, en stockant tous les résultats pour chacun des gens de valeur en entrée
+- production du golden master dans une première phase, en tant que valeur de référence, puis utilisation de celui-ci pour comparer avec les résultats de notre code refactoré
+- il faut constituer les jeux de données pour avoir une couverture de code optimale (possibilité de vérifier la couverture de code de nos tests et d'avoir des tests de mutation)
+- possibilité d'utiliser la bibliothèque `ApprovalTests` en Java pour faciliser la mise en place du golden master
+- le **Golden Master n'a pas vocation à durer**, c'est un échafaudage sur lequel on s'appuie le temps deu refactoring. Il faut ensuite le remplacer par des tests qui représentent le comportement métier, ce qui servira de documentation, et repartir ensuite dans une approche TDD
+- au lieu de construire un fichier de référence (golden master), possibilité de déplacer le code initial de production dans les tests et vérifier que le code refactoré produit les mêmes résultats que le code initial (facile à mettre en oeuvre lorsque le code à refactorer est très regroupé)
+- **Kata Gilded Rose** : https://github.com/emilybache/GildedRose-Refactoring-Kata
+
+### Rendre testable le code legacy
+
+TODO
 
 
 # Clean Architecture
