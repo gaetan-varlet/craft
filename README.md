@@ -209,7 +209,7 @@ Situations plus difficiles à refactorer :
 
 ### Fonctions pures
 
-Caractèristiques :
+Caractéristiques :
 - aucune donnée externe (même une variable globale ne doit pas être utilisée, il faut la passer en paramètre)
 - pas d'effet de bord (pas de modification de variable globale, création d'un clone que l'on va modifier)
 - même sortie avec les mêmes entrées (l'utilisation d'un random fait que la fonction n'est pas pure)
