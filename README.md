@@ -244,11 +244,11 @@ L'enfer du legacy : comment améliorer la situation ?
 - **Kata Trip Service** : https://github.com/sandromancuso/trip-service-kata
 
 **Approche par observation du code**
-- code trop énigmatique, capture de son comportement, en stockant tous les résultats pour chacun des gens de valeur en entrée
+- code trop énigmatique, capture de son comportement en stockant tous les résultats pour chacun des jeux de valeur en entrée
 - production du golden master dans une première phase, en tant que valeur de référence, puis utilisation de celui-ci pour comparer avec les résultats de notre code refactoré
 - il faut constituer les jeux de données pour avoir une couverture de code optimale (possibilité de vérifier la couverture de code de nos tests et d'avoir des tests de mutation)
 - possibilité d'utiliser la bibliothèque `ApprovalTests` en Java pour faciliser la mise en place du golden master
-- le **Golden Master n'a pas vocation à durer**, c'est un échafaudage sur lequel on s'appuie le temps deu refactoring. Il faut ensuite le remplacer par des tests qui représentent le comportement métier, ce qui servira de documentation, et repartir ensuite dans une approche TDD
+- le **Golden Master n'a pas vocation à durer**, c'est un échafaudage sur lequel on s'appuie le temps du refactoring. Il faut ensuite le remplacer par des tests qui représentent le comportement métier, ce qui servira de documentation, et repartir ensuite dans une approche TDD
 - au lieu de construire un fichier de référence (golden master), possibilité de déplacer le code initial de production dans les tests et vérifier que le code refactoré produit les mêmes résultats que le code initial (facile à mettre en oeuvre lorsque le code à refactorer est très regroupé)
 - **Kata Gilded Rose** : https://github.com/emilybache/GildedRose-Refactoring-Kata
 
