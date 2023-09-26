@@ -210,8 +210,8 @@ Situations plus difficiles à refactorer :
 ### Fonctions pures
 
 Caractèristiques :
-- aucune donnée externe utilisée (même une variable globale, il faut la passer en paramètre)
-- pas d'effet de bord (pas de modification de variable globaler, création d'un clone que l'on va modifier)
+- aucune donnée externe (même une variable globale ne doit pas être utilisée, il faut la passer en paramètre)
+- pas d'effet de bord (pas de modification de variable globale, création d'un clone que l'on va modifier)
 - même sortie avec les mêmes entrées (l'utilisation d'un random fait que la fonction n'est pas pure)
 
 Utilité :
@@ -224,12 +224,12 @@ Utilité :
 
 - il existe différentes définitions. Une qui fait de plus en plus consensus, est **un code qui ne dispose pas de tests**
 - il est en effet difficile de savoir ce que le code doit faire sans tests, et il est aussi difficile de faire évoluer le code sans introduire de régressions
-- c'est un critère objectif, indépendemment de l'âge de l'application
+- c'est un critère objectif, indépendamment de l'âge de l'application
 
 L'enfer du legacy : comment améliorer la situation ?
-- écriture de tests sur le périmètre que l'on modifie. 2 stratégies possibles
+- écriture de tests sur le périmètre que l'on modifie. 2 stratégies possibles :
     - chercher à comprendre le métier comme point d'appui des tests
-    - observer et capturer le comportement du code dans un **golden master**
+    - observer et capturer le comportement du code dans un **golden master** (tests de caractérisation ou tests « boîte noire »)
 - l'écriture de tests a posteriori peut être difficile, auquel cas, il faut modifier légèrement le code pour le rendre testable
 - ne pas se disperser et rester focalisé sur un problème à la fois pour éviter l'effet tunnel (noter le reste sur une todo liste)
 
