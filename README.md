@@ -15,9 +15,9 @@ Les grandes thématiques à aborder :
 - bonnes pratiques du craft (SOLID, TDD, Design Pattern…)
 - architecture hexagonale
 - clean architecture
+- Domain Driven Design
 - micro-services
 - event-sourcing / CQRS / CQS
-- Domain Driven Design
 
 # Les bonnes pratiques du craft
 
