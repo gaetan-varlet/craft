@@ -151,7 +151,8 @@
 - Annexes : Outillage
 
 
-## Artisanat logiciel propre: Disciplines, normes et éthique (Clean Craftsmanship),<br>Robert C. Martin, Pearson, 2022
+## Artisanat logiciel propre: Disciplines, normes et éthique (Clean Craftsmanship)
+### Robert C. Martin, Pearson, 2022
 
 - Introduction : Artisanat
 - Les disciplines
