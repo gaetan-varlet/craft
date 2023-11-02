@@ -131,7 +131,8 @@
 - Annexe
 
 
-## Proprement Codeur (The Clean Coder),<br>Robert C. Martin, Pearson, 2022
+## Proprement Codeur (The Clean Coder)
+**Robert C. Martin, Pearson, 2022**
 
 - Introduction incontournable
 - Professionnalisme
