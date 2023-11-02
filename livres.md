@@ -13,7 +13,8 @@
 
 
 
-## Sofware Craft,<br>Cyrille Martraire, Dunod, 2022
+## Sofware Craft
+**Cyrille Martraire, Dunod, 2022**
 
 -  Les pratiques incontournables
     - Le développement dirigé par les tests (TDD)
@@ -34,7 +35,8 @@
     - Craft 2.0
 
 
-## Refactoring, comment améliorer le code existant,<br>Martin Fowler, Dunod, 2019
+## Refactoring, comment améliorer le code existant
+**Martin Fowler, Dunod, 2019**
 
 - Refactoring : exemple introductif
 - Principes du refactoring
@@ -50,7 +52,8 @@
 - Gestion de l'héritage
 
 
-## Pratique des tests logiciels,<br>4e édition, Dunod, 2021
+## Pratique des tests logiciels
+**4e édition, Dunod, 2021**
 
 - Quelques idées essentielles sur les tests
 - Tester à chaque niveau du cycle de vie
@@ -65,7 +68,8 @@
 - Les tests, une nouvelle mesure de complexité
 
 
-## Coder proprement (Clean Code),<br>Robert C. Martin, Pearson, 2018
+## Coder proprement (Clean Code)
+**Robert C. Martin, Pearson, 2018**
 
 - Code propre
 - Noms significatifs
@@ -86,7 +90,8 @@
 - Indicateurs et heuristiques
 
 
-##  Architecture logicielle propre (Clean Architecture),<br>Robert C. Martin, Pearson, 2020
+##  Architecture logicielle propre (Clean Architecture)
+**Robert C. Martin, Pearson, 2020**
 
 - Introduction
     - Que sont la conception et l'architecture
@@ -153,7 +158,7 @@
 
 
 ## Artisanat logiciel propre: Disciplines, normes et éthique (Clean Craftsmanship)
-### Robert C. Martin, Pearson, 2022
+**Robert C. Martin, Pearson, 2022**
 
 - Introduction : Artisanat
 - Les disciplines
