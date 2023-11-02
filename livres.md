@@ -13,7 +13,7 @@
 
 
 
-## Sofware Craft, Cyrille Martraire, Dunod, 2022
+## Sofware Craft<br>Cyrille Martraire, Dunod, 2022
 
 -  Les pratiques incontournables
     - Le développement dirigé par les tests (TDD)
@@ -65,7 +65,7 @@
 - Les tests, une nouvelle mesure de complexité
 
 
-### Coder proprement (Clean Code), Robert C. Martin, Pearson, 2018
+## Coder proprement (Clean Code), Robert C. Martin, Pearson, 2018
 
 - Code propre
 - Noms significatifs
