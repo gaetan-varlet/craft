@@ -4,6 +4,7 @@
 - Sofware Craft, Cyrille Martraire, Dunod, 2022 (288 pages)
 - Refactoring, Martin Fowler, Dunod, 2019 (432 pages)
 - Pratique des tests logiciels, 4e édition, Dunod, 2021 (256 pages)
+- Design Patterns, Tête la première, édition 2010 (environ 600 pages)
 
 **Robert C. Martin :**
 - Coder proprement (Clean Code), Pearson, 2018 (457 pages)
